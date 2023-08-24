@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <nav class="nave-bar">
+    <headerLayout />
+  </nav>
+  <HomeView />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import headerLayout from "./components/The Header/headerLayout.vue";
+import HomeView from "./views/HomeView.vue";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    headerLayout,
+    HomeView,
+  },
+  created() {
+    this.$store.dispatch("getAllProducts");
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.nave-bar {
+  padding: 7px;
+}
+body {
+  margin: 0;
 }
 </style>
