@@ -8,4 +8,7 @@ export default {
     setCounter(state, payload) { 
         state.counter = payload
     },
+    categoryProducts(state, payload) { 
+        state.products = payload
+    },
 } 

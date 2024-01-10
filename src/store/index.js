@@ -8,6 +8,7 @@ export default createStore({
     allProducts: [],
     productCategories: [],
     counter: 0,
+    products:[],
   },
   getters: getters,
   mutations: mutations,

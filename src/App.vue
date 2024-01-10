@@ -1,29 +1,20 @@
 <template>
-  <nav class="nave-bar">
-    <headerLayout />
-  </nav>
-  <HomeView />
+  <theHeader />
+  <home-layout></home-layout>
 </template>
 
 <script>
-import headerLayout from "./components/The Header/headerLayout.vue";
-import HomeView from "./views/HomeView.vue";
+import homeLayout from "./views/homeLayout.vue";
+import theHeader from "./views/theHeader.vue";
 export default {
   components: {
-    headerLayout,
-    HomeView,
+    theHeader,
+    homeLayout,
   },
-  created() {
+  beforeCreate() {
     this.$store.dispatch("getAllProducts");
   },
 };
 </script>
 
-<style>
-.nave-bar {
-  padding: 7px;
-}
-body {
-  margin: 0;
-}
-</style>
+<style></style>

@@ -1,22 +1,17 @@
 export default {
     async getAllProducts(context) {
-        const response = await fetch('https://fakestoreapi.com/products')
+        const response = await fetch('https://dummyjson.com/products?limit=100')
         const res = await response.json()
         context.commit('allProducts' , res)
     },
     async getCategories(context) {
-        const response = await fetch('https://fakestoreapi.com/products/categories')
+        const response = await fetch('https://dummyjson.com/products/categories')
         const res = await response.json()
         context.commit('allCategories' , res)
     },
     async searchCategoryProduct(context, category) {
-        if (category !== 'All') {
-            const response = await fetch(`https://fakestoreapi.com/products/category/${category}`)
+            const response = await fetch(`https://dummyjson.com/products/category/${category}?limit=10`)
             const res = await response.json()
-            context.commit('allProducts', res)
-        }
-        else {
-            context.dispatch("getAllProducts");
-        }
+            context.commit('categoryProducts', res)
     },
 }

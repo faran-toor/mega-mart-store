@@ -1,0 +1,110 @@
+
+body{
+  background-color: #ffff;
+  overflow-x: hidden;
+}
+.bg-body-tertiary{
+  background-color: #ffff !important;
+}
+.search-input-border{
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+}
+.content-image{
+  top: 30%;
+  left: 10%;
+}
+.bg-white{
+  background-color: #ffff;
+}
+.c-smogWhite{
+  color: #656565;
+}
+.bg-smoke{
+  background-color: #f5f5f5;
+}
+.bg-green{
+  background-color: #67a865;
+}
+.c-green{
+  color: #67a865;
+}
+.border-change-hover:hover{
+  border: 1px solid #67a865 !important;
+}
+.home-button{
+  border: 1px solid #fccdc5;
+}
+.home-button:hover{
+  background-color: #67a865 !important;
+  color: #ffff !important;
+}
+.bg-light-orange{
+  background-color: #eb8338 !important;
+}
+.image-zoom-wrapper{
+  transition: transform all .3s ease-in-out;
+}
+.image-zoom:hover , .custom-image:hover{
+  transform: scale(1.1);
+}
+.breadcrumb-item{
+  color: #656565 !important;
+}
+.card-image{
+  height: clamp(180px , 13vw , 200px);
+  width: 100%;
+  object-fit: contain;
+  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+}
+.horizental-image-card{
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+}
+.card-header-overflow{
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card-header-overflow:hover{
+  color: #67a865;
+}
+.show-detail-icons{
+  bottom: -2rem;
+  z-index: 3;
+  transition: all .3s ease-in-out;
+}
+.border-change-hover:hover .show-detail-icons{
+  bottom: -3.5rem;
+}
+.border-change-hover:hover .show-detail-outer{
+  display: block !important;
+  z-index: 3;
+}
+.bg-custom-background{
+  background: linear-gradient(to bottom, #fb8700 0%,#f5583e 100%);
+}
+.progress-bar{
+  background-color: #fb8700 !important;
+}
+.custom-image-startbuying{
+  background-image: url('./banner-v1_1.jpg');
+  background-repeat: no-repeat;
+  min-height: 300px;
+  background-position: left;
+}
+#livePage .fotter{
+  bottom: 3rem;
+}
+#livePage .header{
+  top: 5rem;
+}
+.deal{
+  background: linear-gradient(180deg,#f5583e,#fb8700);
+}
+.custom-background{
+  background: linear-gradient(to right,#f5583e 0%,#f65f34 50%,#fb8700 100%);
+}
